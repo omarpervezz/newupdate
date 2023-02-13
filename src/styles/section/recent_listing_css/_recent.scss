@@ -1,0 +1,163 @@
+$height: 100%;
+$width: 100%;
+.gallery {
+  background: linear-gradient(#ffffffcc, #ffffffed),
+    url(./src/assets/img/modern-minimalist-ivory-home-garage-9euuep88adzkg08e.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center right;
+  display: flex;
+  padding: 0;
+  transition: 0.3s;
+  background-color: $white;
+  position: relative;
+
+  &:hover &__image {
+    filter: grayscale(1);
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    .realty_listing_ {
+      width: 100%;
+      max-width: 1100px;
+      padding: 4rem 20px;
+      position: relative;
+
+      h2 {
+        width: $width;
+        position: relative;
+        font-weight: 600;
+        display: block;
+        height: 100%;
+        color: #2f3659;
+        letter-spacing: -3px;
+
+        span {
+          color: #787878;
+        }
+
+        &:before {
+          content: "01";
+          font-size: 3.4rem;
+          display: block;
+          width: 67%;
+          height: 0.4rem;
+          background-color: #6c6c6c;
+          position: absolute;
+          top: calc($height * 1.2);
+          left: calc($width * -0.01);
+        }
+        &:after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 0.4rem;
+          background-color: #3c7b77;
+          position: absolute;
+          top: calc($height * 1.1);
+          right: calc($width * -0.1);
+        }
+      }
+    }
+
+    .btn_all_litsting {
+      background-color: $black;
+      color: $white;
+      z-index: 1000;
+      border: 0.1rem solid $black;
+      transition: background 0.5s ease-in, color 0.6s ease-in;
+      &:hover {
+        background-color: transparent;
+        color: $black;
+      }
+      &:after {
+        content: "";
+        display: block;
+        width: 4rem;
+        background: rgb(32, 29, 24);
+        position: absolute;
+        transition: 0.2s all ease-in-out;
+
+        left: calc($width * -0.096);
+        position: absolute;
+      }
+
+      &:hover:after {
+        opacity: 1;
+        left: calc($width * -0.057);
+      }
+    }
+  }
+
+  &__link {
+    margin: 2px;
+    overflow: hidden;
+
+    &:hover {
+      .gallery__image {
+        filter: grayscale(0);
+      }
+
+      .gallery__caption {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__thumb {
+    position: relative;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 15px 15px;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: white;
+    opacity: 1;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transition: 0.3s;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+
+    &__column {
+      width: 50%;
+    }
+    &__link {
+      margin: 1.4rem 0;
+    }
+    h2 {
+      text-align: center;
+
+      &:before,
+      &:after {
+        display: none !important;
+      }
+    }
+  }
+}

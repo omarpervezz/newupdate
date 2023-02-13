@@ -1,0 +1,129 @@
+@import "./header_all_elements_css/_menudeskmobile";
+@import "./header_all_elements_css/_socialmedia";
+@import "./header_all_elements_css/_humburger";
+@import "./header_all_elements_css/_pushbar";
+@import "./header_all_elements_css/_pushbarinitlization";
+@import "./header_all_elements_css/header_responsive";
+
+@import "./header_all_elements_css/_sl";
+
+header {
+  position: fixed;
+  padding: 2rem 0;
+  width: 100%;
+  top: 0;
+  z-index: 1001;
+  transition: 0.2s ease-in-out;
+  /* container-fluid start */
+  .container-fluid {
+    width: 90%;
+    margin: auto;
+    .row_ {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      /* logo start */
+      .logo_contianer {
+        .logo_ {
+          a {
+            width: 100%;
+            height: auto;
+            img {
+              width: 6rem;
+              transition: 0.4s all ease-in-out;
+            }
+            .second_logo {
+              width: 16rem;
+            }
+          }
+        }
+      } /* logo end */
+
+      /* menu container start */
+      .menu_container {
+        text-align: center;
+        flex-shrink: 0;
+        .nav_menu {
+          ul {
+            li {
+              position: relative;
+              margin-left: 1.7rem;
+              a.nav_item:link,
+              a.nav_item:visited {
+                font-weight: 400;
+                color: $white;
+                font-size: $font_size1;
+                i {
+                  margin-left: 0.6rem;
+                  color: $white;
+                  font-size: 1.4rem;
+                }
+              }
+
+              .dropdown-content {
+                position: absolute;
+                top: 5.8rem;
+                background: $gradient_color1;
+                min-width: 230px;
+                box-shadow: 0px 12px 15px 2px rgb(0 0 0 / 20%);
+                z-index: 1;
+                text-align: left;
+                padding: 2rem 1.5rem;
+                transition: 0.4s;
+                transform-origin: top;
+                transform: scaleY(0);
+                border-radius: 0.6rem;
+                border-top: 0.523rem solid #0066cc;
+                a {
+                  display: inline-block;
+                  padding: 0.6rem 0.8rem;
+                  font-size: 1.5rem;
+                  img {
+                    width: 2rem;
+                  }
+                  span {
+                    color: $black;
+                    font-weight: 400;
+                  }
+                }
+              }
+              &:hover {
+                .dropdown-content {
+                  transition: transform 0.6s;
+                  transform-origin: top;
+                  transform: scaleY(1);
+                }
+              }
+              &:first-child {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      } /* menu container end*/
+    }
+  } /* container fluid end */
+}
+.nav_bg_adder {
+  background: $white;
+  .nav_menu {
+    li {
+      a {
+        color: $black !important;
+        i {
+          color: $black !important;
+        }
+      }
+    }
+  }
+  .hamburger {
+    div {
+      background: $black !important;
+    }
+
+    span {
+      color: $black !important;
+    }
+  }
+}

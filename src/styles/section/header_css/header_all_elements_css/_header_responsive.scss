@@ -1,0 +1,23 @@
+@media only screen and (max-width: 1350px) {
+  header .container-fluid {
+    width: 85% !important;
+  }
+
+  /* hide the nav menu 0-1190px*/
+  .menu_container {
+    display: none !important;
+  }
+  header .container-fluid .logo_contianer {
+    width: 35% !important;
+  }
+
+  header .container-fluid .social_container {
+    width: 55% !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .social_container .social_media,
+  .social_container .sl_information {
+    display: none !important;
+  }
+}

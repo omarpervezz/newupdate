@@ -1,0 +1,29 @@
+$button__width: 200px;
+$button_height: 100%;
+.btn_ {
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #eaf0f000;
+  width: 200px;
+  text-align: center;
+  padding: 1.2rem 2.4rem;
+  border: 0.1rem solid #ffffff;
+  transition: 0.4s all;
+  margin: 1rem 0;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 4rem;
+    height: 0.1rem;
+    background: rgb(248, 247, 245);
+    position: absolute;
+    top: calc($button_height * 0.5);
+    right: calc($button__width * -0.1);
+  }
+
+  &:hover {
+    border: 0.1rem solid $white;
+  }
+}

@@ -1,0 +1,38 @@
+// .social_container {
+//   .social_media {
+//     ul {
+//       li {
+//         margin-left: 1.5rem;
+//         a:link,
+//         a:visited {
+//           i {
+//             color: $black;
+//             font-size: 1.8rem;
+//             transition: all 0.3s linear;
+//             display: inline-block;
+//           }
+//         }
+//         &:first-child {
+//           margin-left: 0;
+//         }
+//         :hover {
+//           i {
+//             transform: rotate(360deg);
+//           }
+//           .bi-facebook {
+//             color: #1196f5;
+//           }
+//           .bi-instagram {
+//             color: #f9247f;
+//           }
+//           .bi-youtube {
+//             color: #ff0000;
+//           }
+//           .bi-yelp {
+//             color: #ff1a1a;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

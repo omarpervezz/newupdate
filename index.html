@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Right Realty Group - Making Real Estate a Breeze</title>
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/src/assets/logo_img/the_right_realty_group.jpeg"
+    />
+    <!--google material icon-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <link rel="stylesheet" href="./src/vendor_css/jquery-bg-slideshow-min.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="./src/vendor_js/jquery-bg-slideshow-min.js"></script>
+  <body>
+    <!--start header-->
+    <header class="animate__animated">
+      <div class="container-fluid">
+        <nav>
+          <div class="row_">
+            <div class="logo_contianer">
+              <div class="logo_">
+                <a href="#" class="d-flex align-items-center">
+                  <img
+                    src="./src/assets/logo_img/the_right_realty_group.jpeg"
+                    alt="logo"
+                    class="img-fluid header_logo"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="d-flex justify-content-end align-items-center menu_container"
+            >
+              <div class="nav_menu">
+                <ul class="d-flex desk_menu">
+                  <li class="d-flex flex-column">
+                    <a href="#" class="nav_item">REALTY Listing</a>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <a class="d-flex align-items-center nav_item" href="#"
+                      >Master Plan
+                      <i class="bi bi-chevron-down"></i>
+                    </a>
+
+                    <!--sub menu-->
+                    <div class="dropdown-content d-flex flex-column">
+                      <a href="#"> <span>Sellers</span></a>
+                      <a href="#"> <span>Buyers</span></a>
+                      <a href="#">
+                        <span>Pre-Listing Survey for Sellers</span>
+                      </a>
+                      <a href="#">
+                        <span>Pre-Appointment Survey for Buyers</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="d-flex align-items-center nav_item" href="#"
+                      >Why REALTY
+                      <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <!--sub menu-->
+                    <div class="dropdown-content d-flex flex-column">
+                      <a href="#">
+                        <span>About</span>
+                      </a>
+                      <a href="#">
+                        <span>Team</span>
+                      </a>
+                      <a href="#">
+                        <span>Videos</span>
+                      </a>
+                      <a href="#">
+                        <span>Contact</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li><a href="#" class="nav_item">Testimonials</a></li>
+                  <li><a href="#" class="nav_item">Career</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="hamburger" data-pushbar-target="mypushbar1">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <span>Menu</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--end header-->
+    <!--mobile menu-->
+    <div
+      data-pushbar-id="mypushbar1"
+      data-pushbar-direction="right"
+      class="push-container push__bar"
+    >
+      <div class="d-flex align-items-center h-100 overflow-hidden">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col col-12">
+              <div class="menu_logo__">
+                <img
+                  src="./src/assets/logo_img/the_right_realty_group.jpeg"
+                  alt="the_right_realty_group"
+                  class="img-fluid right_realty_logo"
+                />
+                <img
+                  src="./src/assets/logo_img/cropped-eXp-Realty-Color-2.png"
+                  alt="exp_logo"
+                  class="img-fluid exp_logo"
+                />
+              </div>
+            </div>
+            <div class="col col-12 mobile_menu_container">
+              <div class="d-flex flex-column mobile_menu w-75">
+                <div
+                  class="d-flex justify-content-between top_menu_information__"
+                >
+                  <div>
+                    <h5>REALTY Listing</h5>
+                    <ul>
+                      <li><a href="#">Our Properties</a></li>
+                      <li><a href="#">Recent Sell</a></li>
+                      <li><a href="#">Recent added</a></li>
+                      <li>
+                        <a href="#">Pre-Appointment Survey for Buyers</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5>Master Plan</h5>
+                    <ul>
+                      <li><a href="#">Sellers</a></li>
+                      <li><a href="#">Buyers</a></li>
+                      <li><a href="#">Pre-Listing Survey for Sellers</a></li>
+                      <li>
+                        <a href="#">Pre-Appointment Survey for Buyers</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5>Why REALTY</h5>
+                    <ul>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Videos</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- <hr class="pb-4" /> -->
+                <div
+                  class="d-flex justify-content-between bottom_menu_information__"
+                >
+                  <div>
+                    <h5>Testimonials</h5>
+                  </div>
+                  <div>
+                    <h5>Career</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button id="close" type="button" data-pushbar-close>
+        <span class="material-symbols-outlined"> close </span>
+        <span class="close_text">close</span>
+      </button>
+    </div>
+    <!--main start-->
+    <main>
+      <!--start banner-->
+      <section class="banner_">
+        <div class="content__">
+          <div class="row">
+            <div class="col col-12 text-center">
+              <div class="px-app px-glitch">
+                <h1 id="fitterText_heading_one">
+                  <span class="px-top__">Find Your Perfect Property with</span>
+                  <span class="px-top__ px-anim__">The Right REALTY Group</span>
+                </h1>
+                <icon-quix class="px-glitchsvg" icon="star-filled"></icon-quix>
+                <icon-quix
+                  class="px-glitchsvg px-glitchsvg-anim"
+                  icon="star-filled"
+                ></icon-quix>
+              </div>
+            </div>
+            <div class="col col-12 mt-3 d-flex justify-content-center">
+              <div class="px-app_button d-flex justify-content-center">
+                <a href="#" class="btn_ btn_banner fitter_text_button"
+                  >About Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg__"></div>
+      </section>
+      <!--end banner-->
+
+      <section class="gallery">
+        <div class="col__1 gallery__column animate__animated" data-scroll>
+          <a href="#" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img
+                src="https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="gallery_img"
+                class="gallery__image"
+              />
+              <figcaption
+                class="gallery__caption d-flex justify-content-around"
+              >
+                <span>$12,995,000</span><span>7135 Blvd</span>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a href="#" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img
+                src="https://images.pexels.com/photos/4221409/pexels-photo-4221409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="gallery_img"
+                class="gallery__image"
+              />
+              <figcaption
+                class="gallery__caption d-flex justify-content-around"
+              >
+                <span>$12,995,000</span><span>7135 Blvd</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img
+                src="https://images.pexels.com/photos/4221409/pexels-photo-4221409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="gallery_img"
+                class="gallery__image"
+              />
+              <figcaption
+                class="gallery__caption d-flex justify-content-around"
+              >
+                <span>$12,995,000</span><span>7135 Blvd</span>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="gallery__column animate__animated" data-scroll>
+          <a href="#" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img
+                src="https://images.pexels.com/photos/12277294/pexels-photo-12277294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="gallery_img"
+                class="gallery__image"
+              />
+              <figcaption
+                class="gallery__caption d-flex justify-content-around"
+              >
+                <span>$12,995,000</span><span>7135 Blvd</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img
+                src="https://images.pexels.com/photos/14286298/pexels-photo-14286298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="gallery_img"
+                class="gallery__image"
+              />
+              <figcaption class="gallery__caption">
+                Portrait by Guilian Fremaux
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img
+                src="https://images.pexels.com/photos/3935331/pexels-photo-3935331.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="gallery_img"
+                class="gallery__image"
+              />
+              <figcaption
+                class="gallery__caption d-flex justify-content-around"
+              >
+                <span>$12,995,000</span><span>7135 Blvd</span>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+
+        <div class="gallery__column animate__animated" data-scroll>
+          <a href="#" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img
+                src="https://images.pexels.com/photos/13067768/pexels-photo-13067768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="gallery_img"
+                class="gallery__image"
+              />
+              <figcaption
+                class="gallery__caption d-flex justify-content-around"
+              >
+                <span>$12,995,000</span><span>7135 Blvd</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img
+                src="https://images.pexels.com/photos/13067768/pexels-photo-13067768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="gallery_img"
+                class="gallery__image"
+              />
+              <figcaption
+                class="gallery__caption d-flex justify-content-around"
+              >
+                <span>$12,995,000</span><span>7135 Blvd</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="gallery__link">
+            <figure class="gallery__thumb">
+              <img
+                src="https://images.pexels.com/photos/14286298/pexels-photo-14286298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="gallery_img"
+                class="gallery__image"
+              />
+              <figcaption class="gallery__caption">
+                Portrait by Guilian Fremaux
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+        <div
+          class="gallery__column animate__animated justify-content-center"
+          data-scroll
+        >
+          <div class="realty_listing_">
+            <h2 class="heading_four">
+              REALTY
+              <span>LITSTED</span>
+            </h2>
+          </div>
+          <div class="realty_listing_ mb-5">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <a href="#" class="btn_ btn_all_litsting">All Listings</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--recent sales end-->
+      <!--work_as_section start-->
+      <section class="work_sec d-flex align-items-center">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col col-12 col-md-12 col-lg-12">
+              <div class="work_content__ d-flex flex-column align-items-end">
+                <div class="px-app_heading_two">
+                  <h2
+                    class="heading_two d-flex justify-content-center text-left"
+                    class="mb-1"
+                  >
+                    Achieving Your Real Estate Dreams, Together as a Team!
+                  </h2>
+                </div>
+                <div class="px-app_heading_two">
+                  <p class="paragraph__">
+                    We are Your Trusted Real Estate Advisors. At our core, we
+                    believe in fostering lasting relationships, creating vibrant
+                    communities, and empowering our clients to reach their real
+                    estate goals. Our marketing and transaction specialists
+                    bring a fresh perspective to the industry, working
+                    cohesively to deliver exceptional results through their
+                    singular focus and expertise. Trust us to provide you with
+                    the highest level of service and expertise when buying or
+                    selling your most valuable asset.
+                  </p>
+                </div>
+                <div class="px-app-button">
+                  <a href="#" class="btn_ text-uppercase fitter_text_button"
+                    >Learn more about us
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--work_as_section end-->
+      <section class="card__container__">
+        <article class="card-featured" data-scroll>
+          <!-- Featured card component -->
+          <img
+            src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          />
+          <!-- card overlay -->
+          <div class="overlay"></div>
+          <!-- on hover card data -->
+          <div class="card-data">
+            <!-- card name -->
+            <div class="card-name">
+              <div class="px-app_heading_two">
+                <h2 class="heading_two">
+                  <span>Trusted By Thousand</span>
+                </h2>
+              </div>
+            </div>
+            <!-- card stat -->
+            <div class="card-stat">
+              <p>
+                10 new offers every day. 350 offers on site, trusted by a
+                community of thousands of users.
+              </p>
+            </div>
+            <!-- card stat -->
+            <div class="card-stat"></div>
+            <!-- card stat -->
+            <div class="card-stat"></div>
+          </div>
+          <!-- end of on hover data-->
+          <!-- card video -->
+          <div class="card-screenshots">
+            <img
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1453&q=80"
+              alt="featured card"
+            />
+          </div>
+        </article>
+
+        <article class="card-featured" data-scroll>
+          <!-- Featured card component -->
+          <img
+            src="https://images.unsplash.com/photo-1544984243-ec57ea16fe25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+            alt="featured card"
+          />
+          <!-- card overlay -->
+          <div class="overlay"></div>
+          <!-- on hover card data -->
+          <div class="card-data">
+            <!-- card name -->
+            <div class="card-name">
+              <div class="px-app_heading_two">
+                <h2 class="heading_two">
+                  <span>Trusted By Thousand</span>
+                </h2>
+              </div>
+            </div>
+            <!-- card stat -->
+            <div class="card-stat">
+              <p>
+                10 new offers every day. 350 offers on site, trusted by a
+                community of thousands of users.
+              </p>
+            </div>
+            <!-- card stat -->
+            <div class="card-stat"></div>
+            <!-- card stat -->
+            <div class="card-stat"></div>
+          </div>
+          <!-- end of on hover data-->
+          <!-- card video -->
+          <div class="card-screenshots">
+            <img
+              src="https://images.unsplash.com/photo-1600047509782-20d39509f26d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1001&q=80"
+              alt="featured card"
+            />
+          </div>
+        </article>
+
+        <article class="card-featured" data-scroll>
+          <!-- Featured card component -->
+          <img
+            src="https://images.unsplash.com/photo-1600573472592-401b489a3cdc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          />
+          <!-- card overlay -->
+          <div class="overlay"></div>
+          <!-- on hover card data -->
+          <div class="card-data">
+            <!-- card name -->
+            <div class="card-name">
+              <div class="px-app_heading_two">
+                <h2 class="heading_two">
+                  <span>Trusted By Thousand</span>
+                </h2>
+              </div>
+            </div>
+            <!-- card stat -->
+            <div class="card-stat">
+              <p>
+                10 new offers every day. 350 offers on site, trusted by a
+                community of thousands of users.
+              </p>
+            </div>
+            <!-- card stat -->
+            <div class="card-stat"></div>
+            <!-- card stat -->
+            <div class="card-stat"></div>
+          </div>
+          <!-- end of on hover data-->
+          <!-- card video -->
+          <div class="card-screenshots">
+            <img
+              src="https://images.unsplash.com/photo-1600563440091-ab11f30e01d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              alt="featured card"
+            />
+          </div>
+        </article>
+      </section>
+
+      <!--master plan start-->
+      <section class="master_plan_">
+        <div class="bg-primary">
+          <div class="container-fluid fluid_1">
+            <div class="row">
+              <div
+                class="col-12 text-center d-flex flex-column align-items-center justify-content-center"
+              >
+                <div class="px-app_heading_two">
+                  <h2 class="heading_two">
+                    <span> Comprehensive Strategy </span>
+                  </h2>
+                </div>
+                <br />
+                <p class="paragraph__ mt-2">
+                  Our marketing specialists craft comprehensive strategies for
+                  each client, no matter their Real Estate goal.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div
+            class="d-flex flex-column flex-column-md flex-lg-row flex-xl-row listing_buying"
+          >
+            <div class="listing_homes">
+              <div class="row">
+                <div class="col-12 d-flex flex-column justify-content-center">
+                  <div class="row">
+                    <div
+                      class="col-12 d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <div class="px_headging_three text-center">
+                        <h5 class="heading_three">
+                          <span>Listing Homes</span>
+                        </h5>
+                      </div>
+                      <div class="px-app_heading_two">
+                        <p class="paragraph__ text-center">
+                          Maximize your profits and minimize time on market by
+                          following our proven steps for selling your home
+                          efficiently and effectively.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center">
+                    <div class="px-app-button mt-4">
+                      <a href="#" class="btn fitter_text_button"
+                        >The Master Plan
+                        <span class="material-symbols-outlined ms-3">
+                          arrow_right_alt
+                        </span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="buying_homes">
+              <div class="row">
+                <div class="col-12 d-flex flex-column justify-content-center">
+                  <div class="row">
+                    <div
+                      class="col-12 d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <div class="px_headging_three text-center">
+                        <h5 class="heading_three">
+                          <span>Buying Homes</span>
+                        </h5>
+                      </div>
+                      <div class="px-app_heading_two">
+                        <p class="paragraph__ text-center">
+                          Maximize your profits and minimize time on market by
+                          following our proven steps for selling your home
+                          efficiently and effectively.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center">
+                    <div class="px-app-button mt-4">
+                      <a href="#" class="btn fitter_text_button"
+                        >The Master Plan
+                        <span class="material-symbols-outlined ms-3">
+                          arrow_right_alt
+                        </span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--master plan end-->
+      <!--our team start-->
+      <section class="our_team">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="px-app_heading_two">
+                <h2 class="heading_two">
+                  <span>
+                    Our team is made up of truly talented individuals.</span
+                  >
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fluid_contianer__">
+          <div class="container-fluid">
+            <div
+              class="row justify-content-start justify-content-lg-center"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!--our team end-->
+    </main>
+    <!--main end-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <script src="./src/vendor_js/FitText.js-master/jquery.fittext.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="./src/vendor_js/pushbar.js"></script>
+    <script src="./main.js"></script>
+
+    <script>
+      /* heading 1 */
+      $("#fitterText_heading_one").fitText(1.1, {
+        minFontSize: "20px",
+        maxFontSize: "48px",
+      });
+      /* heading_two */
+      $(".heading_two").fitText(1.4, {
+        minFontSize: "13px",
+        maxFontSize: "43px",
+      });
+      /* heading_three */
+      $(".heading_three").fitText(1.5, {
+        minFontSize: "13px",
+        maxFontSize: "23px",
+      });
+      /* heading_three */
+      $(".heading_four").fitText(1.5, {
+        minFontSize: "38px",
+        maxFontSize: "70px",
+      });
+      /* paragrap__ */
+      $(".paragraph__").fitText(1.2, {
+        minFontSize: "13px",
+        maxFontSize: "15px",
+      });
+      /* button */
+      $(".fitter_text_button").fitText(1.2, {
+        minFontSize: "15px",
+        maxFontSize: "18px",
+      });
+
+      ScrollOut({
+        onShown(el) {
+          el.classList.add("animate__fadeInLeftBig");
+          // force reflow
+          void el.offsetWidth;
+
+          // re-add the animated cl
+          el.classList.add("animate__fadeInLeftBig");
+        },
+      });
+    </script>
+  </body>
+</html>

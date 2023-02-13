@@ -1,0 +1,82 @@
+$no_repeat: no-repeat;
+$cover: cover;
+$center: center;
+
+.master_plan_ {
+  padding-top: 0;
+  .bg-primary {
+    padding: 7rem 0;
+    background-color: $black !important;
+    color: $white;
+    .fluid_1 {
+      width: 80% !important;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  .container-fluid {
+    width: 100%;
+    padding-left: 0 !important;
+
+    .listing_buying {
+      .row {
+        padding: 0;
+        --bs-gutter-x: 0;
+      }
+      & > div {
+        width: 50%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+      }
+      .listing_homes,
+      .buying_homes {
+        & > div {
+          width: 100%;
+          .paragraph__ {
+            margin: 0.7rem 0;
+          }
+          .px-app-button {
+            a {
+              padding: 0.6rem 1.2rem;
+              &:hover {
+                background: transparent;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+      .listing_homes {
+        background: linear-gradient(
+            hsl(0deg 0% 0% / 52%),
+            hwb(0deg 0% 100% / 80%)
+          ),
+          url(https://images.pexels.com/photos/6631793/pexels-photo-6631793.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load);
+        background-repeat: $no_repeat;
+        background-size: $cover;
+        background-position: $center;
+      }
+      .buying_homes {
+        background: linear-gradient(
+            hsl(0deg 0% 0% / 52%),
+            hwb(0deg 0% 100% / 80%)
+          ),
+          url(https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-repeat: $no_repeat;
+        background-size: $cover;
+        background-position: $center;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .listing_buying {
+    & > div {
+      width: 100% !important;
+    }
+  }
+}

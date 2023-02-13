@@ -1,0 +1,34 @@
+.why_with_us {
+  background-color: #000d1ed4;
+  color: white;
+  min-height: 30vh;
+  .heading_container {
+    h2 {
+      margin-bottom: 2rem;
+    }
+  }
+  .choose_content {
+    padding: 2rem 2rem;
+    transition: 0.3s all;
+    border-radius: 1rem;
+    background-color: #00807d;
+    span {
+      font-size: 5.7rem;
+      margin-right: 2rem;
+      font-weight: normal;
+      color: #e5e5e5;
+    }
+    h4 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #e5e5e5;
+    }
+    p {
+      font-size: 1.4rem;
+      font-weight: 300;
+      margin-top: 0.5rem;
+    }
+    &:hover {
+    }
+  }
+}

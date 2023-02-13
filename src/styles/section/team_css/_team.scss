@@ -1,0 +1,16 @@
+.our_team {
+  padding-top: 4rem;
+  .header_container {
+    text-align: left;
+  }
+  .fluid_contianer__ {
+    margin-top: 4rem;
+    .container-fluid {
+      width: 100%;
+
+      .col-4 {
+        width: 23%;
+      }
+    }
+  }
+}

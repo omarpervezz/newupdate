@@ -1,0 +1,17 @@
+/* sl_information */
+.sl_information {
+  a:link,
+  a:visited {
+    display: inline-block;
+    font-size: $font_size1;
+    font-weight: $weight_400;
+    background: #0066cc;
+    padding: 0.2rem 1.5rem;
+    border-radius: 2rem;
+    color: #f2f2f3;
+    i {
+      font-size: 2rem;
+      margin-right: 0.5rem;
+    }
+  }
+}
